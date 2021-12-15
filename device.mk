@@ -201,6 +201,10 @@ PRODUCT_PACKAGES += \
     libvndfwk_detect_jni.qti \
     libvndfwk_detect_jni.qti.vendor
 
+# Properties
+-include $(LOCAL_PATH)/product_prop.mk
+PRODUCT_COMPATIBLE_PROPERTY_OVERRIDE := true
+
 # GPS
 PRODUCT_PACKAGES += \
     libbatching \
